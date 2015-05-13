@@ -83,16 +83,6 @@ else
             commands    rule_commands
             defaults    rule_defaults
         end
-
-        #puts "ID: #{rule["id"]}"
-        #puts "Name: #{rule_name}"
-        #puts "Action: #{rule_action}"
-        #puts "User: #{rule_user}"
-        #puts "Runas: #{rule_runas}"
-        #puts "Nopasswd #{rule_nopasswd}"
-        #puts "Commands: #{rule_commands}"
-        #puts "Defaults: #{rule_defaults}"
-        #puts "--"
     end
 end
 
