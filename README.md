@@ -10,7 +10,6 @@ Requirements
 Attributes
 ----------
 
-e.g.
 #### sudo_rules::default
 
 Key              | Type   | Description                          | Default
@@ -57,14 +56,16 @@ And provide properly formatted data bag:
 }
 ```
 
-Id: Required: Name of Data Bag item, and sudoers.d/Id filename.
-Name: Optional: Instead of using Id, you can choose the name of the file for sudoers.d/Name instead.
-Hosts: Required: List of hosts to apply this rule to by fqdn, can be wildcard matched.
-Action: `create` or `remove`: Default `create`
-User: Required: Username or %Groupname to use for the sudo rule.
-Runas: Allowed colon-separated list of users for sudoers runas: Default `ALL`
-Commands: Required: List of commands (and arguments) this rule adds for the user/group.
-Defaults: List of defaults this user has. 
+Key      | Type   | Description                                                                          | Default    | Required?
+-------- | ------ | ------------------------------------------------------------------------------------ | ---------- | ---------
+Id       | String | Name of Data Bag item, and sudoers.d/Id filename.                                    | None       | Yes
+Name     | String | Instead of using Id, you can choose the name of the file for sudoers.d/Name instead. | Same as Id | No
+Hosts    | Array  | List of hosts to apply this rule to by fqdn, can be wildcard matched.                | None       | Yes
+Action   | String | `create` or `remove` Sets whether to create or remove the entry.                     | `create`   | No
+User     | String | Username or %Groupname to use for the sudo rule.                                     | None       | Yes
+Runas    | String | Allowed colon-separated list of users for sudoers runas.                             | `ALL`      | No
+Commands | Array  | List of commands (and arguments) this rule adds for the user/group.                  | []         | Yes
+Defaults | Array  | List of defaults this user has.                                                      | []         | No
 
 Contributing
 ------------
