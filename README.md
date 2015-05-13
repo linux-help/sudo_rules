@@ -9,24 +9,13 @@ Requirements
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
 
 e.g.
 #### sudo_rules::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['sudo_rules']['data_bag']</tt></td>
-    <td>String</td>
-    <td>Name of data bag to use for entries</td>
-    <td><tt>sudo_rules</tt></td>
-  </tr>
-</table>
+
+Key              | Type   | Description                          | Default
+---------------- | ------ | ------------------------------------ | ----------
+`['sudo_rules']` | String | Name of data bag to use for entries. | sudo_rules
 
 Usage
 -----
@@ -79,9 +68,6 @@ Defaults: List of defaults this user has.
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write your change
@@ -91,5 +77,6 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: Eric Renfro <erenfro@linux-help.org>
+
 
