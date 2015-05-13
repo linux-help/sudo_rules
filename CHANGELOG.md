@@ -3,9 +3,13 @@ sudo_rules CHANGELOG
 
 This file is used to list changes made in each version of the sudo_rules cookbook.
 
+0.1.1
+-----
+- [erenfro] - Cleanup typos.
+
 0.1.0
 -----
-- [erenfro] - Initial release of test
+- [erenfro] - Initial release of sudo_rules
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
