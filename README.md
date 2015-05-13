@@ -76,6 +76,10 @@ Contributing
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
+or
+
+1. Report issue on Github
+
 License and Authors
 -------------------
 Authors: Eric Renfro <erenfro@linux-help.org>
