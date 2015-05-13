@@ -60,7 +60,7 @@ Key      | Type   | Description                                                 
 -------- | ------ | ------------------------------------------------------------------------------------ | ---------- | ---------
 Id       | String | Name of Data Bag item, and sudoers.d/Id filename.                                    | None       | Yes
 Name     | String | Instead of using Id, you can choose the name of the file for sudoers.d/Name instead. | Same as Id | No
-Hosts    | Array  | List of hosts to apply this rule to by fqdn, can be wildcard matched.                | None       | Yes
+Hosts    | Array  | List of hosts to apply this rule to by fqdn, can be wildcard matched.                | []         | Yes
 Action   | String | `create` or `remove` Sets whether to create or remove the entry.                     | `create`   | No
 User     | String | Username or %Groupname to use for the sudo rule.                                     | None       | Yes
 Runas    | String | Allowed colon-separated list of users for sudoers runas.                             | `ALL`      | No
