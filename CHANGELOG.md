@@ -3,6 +3,14 @@ sudo_rules CHANGELOG
 
 This file is used to list changes made in each version of the sudo_rules cookbook.
 
+0.1.3
+-----
+- [erenfro] - LICENSE added.
+
+0.1.2
+-----
+- [erenfro] - Code cleanup, documentation cleanup.
+
 0.1.1
 -----
 - [erenfro] - Cleanup typos.
