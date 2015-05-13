@@ -16,5 +16,6 @@ gem 'berkshelf'
 
 gem "test-kitchen"
 gem "kitchen-docker"
+gem "kitchen-vagrant"
 gem "stove"
 

@@ -1,0 +1,24 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+  require_chef_omnibus: 12.2.1
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6.6
+  - name: centos-7.0
+    driver:
+      dockerfile: test/centos7-dockerfile
+      platform: centos
+      privileged: true
+      use_sudo: false
+  - name: debian-7.8
+
+suites:
+  - name: default
+    run_list:
+      - recipe[sudo_rules::default]
+    attributes:
