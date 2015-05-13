@@ -48,7 +48,7 @@ And provide properly formatted data bag:
 ```json
 {
     "id": "Data Bag unique name, default value for name below",
-    "name": "Name of the sudoers.d file
+    "name": "Name of the sudoers.d file",
     "hosts": [
         "fqdn1",
         "fqdn2",
