@@ -12,9 +12,9 @@ Attributes
 
 #### sudo_rules::default
 
-Key              | Type   | Description                          | Default
----------------- | ------ | ------------------------------------ | ----------
-`['sudo_rules']` | String | Name of data bag to use for entries. | sudo_rules
+Key                          | Type   | Description                          | Default
+---------------------------- | ------ | ------------------------------------ | ----------
+`['sudo_rules']['data_bag']` | String | Name of data bag to use for entries. | sudo_rules
 
 #### data bag
 
