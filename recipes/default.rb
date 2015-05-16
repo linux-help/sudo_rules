@@ -12,10 +12,16 @@ include_recipe "sudo"
 node.override['authorization']['sudo']['include_sudoers_d'] = true
 search_node = node['fqdn']
 
+if node['sudo_rules'].key?('search_query') && node['sudo_rules']['search_query'] != ''
+  search_query = node['sudo_rules']['search_query']
+else
+  search_query = "hosts:#{search_node}"
+end
+
 if Chef::Config[:solo] and nod chef_solo_search_installed?
     Chef::Log.warn("This recipe uses search. Chef Solo does not support search unless you install the chef-solo-search cookbook.")
 else
-    search(node['sudo_rules']['data_bag'], "hosts:#{search_node}").each do |rule|
+    search(node['sudo_rules']['data_bag'], search_query).each do |rule|
         # Name
         if rule["name"].kind_of?(String)
             rule_name = rule["name"]
