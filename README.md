@@ -87,6 +87,8 @@ or
 
 License and Authors
 -------------------
-Authors:      Eric Renfro <erenfro@linux-help.org>
-Contributers: Pieter Vogelaar
+- Authors:
+    - Eric Renfro <erenfro@linux-help.org>
+- Contributors:
+    - Pieter Vogelaar
 
