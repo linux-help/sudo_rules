@@ -12,9 +12,10 @@ Attributes
 
 #### sudo_rules::default
 
-Key                          | Type   | Description                          | Default
----------------------------- | ------ | ------------------------------------ | ----------
-`['sudo_rules']['data_bag']` | String | Name of data bag to use for entries. | sudo_rules
+Key                              | Type   | Description                                                | Default
+-------------------------------- | ------ | ---------------------------------------------------------- | ----------
+`['sudo_rules']['data_bag']`     | String | Name of data bag to use for entries.                       | sudo_rules
+`['sudo_rules']['search_query']` | String | Custom search query for matching instead of just host:fqdn | None
 
 #### data bag
 
@@ -71,12 +72,13 @@ And provide properly formatted data bag:
 
 Contributing
 ------------
-1. Fork the repository on Github
-2. Create a named feature branch (like `add_component_x`)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the tests, ensuring they all pass
-6. Submit a Pull Request using Github
+1. Fork the repository on Github.
+2. Switch to the develop branch.
+3. Create a named feature branch off develop (like `add_component_x`).
+4. Write your change.
+5. Write tests for your change (if applicable).
+6. Run the tests, ensuring they all pass.
+7. Submit a Pull Request using Github to develop branch.
 
 or
 
@@ -84,6 +86,6 @@ or
 
 License and Authors
 -------------------
-Authors: Eric Renfro <erenfro@linux-help.org>
-
+Authors:      Eric Renfro <erenfro@linux-help.org>
+Contributers: Pieter Vogelaar
 
