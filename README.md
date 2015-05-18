@@ -74,11 +74,12 @@ Contributing
 ------------
 1. Fork the repository on Github.
 2. Switch to the develop branch.
-3. Create a named feature branch off develop (like `add_component_x`).
+3. Create a named feature branch off develop (like `githubusername/feature/add_component_x`).
 4. Write your change.
-5. Write tests for your change (if applicable).
-6. Run the tests, ensuring they all pass.
-7. Submit a Pull Request using Github to develop branch.
+5. Update documentation if appropriate.
+6. Write tests for your change (if applicable).
+7. Run the tests, ensuring they all pass.
+8. Submit a Pull Request using Github to develop branch.
 
 or
 
